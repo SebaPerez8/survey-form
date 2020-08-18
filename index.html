@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Encuesta de hinchas primera division AFA</h1>
+            <p id="description"></p>
+        </header>
+        <!--FORMULARIO-->
+        <form id="survey-form">
+            <!--NOMBRE-->
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese nombre y apellido" required>
+            </div>
+            <!--EMAIL--> 
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Ingrese email" required>
+            </div>
+            <!--EDAD-->
+            <div class="form-group">
+                <label id="number-label" for="number">Edad</label>
+                <input type="number" class="form-control" name="age" min="1" max="99" id="number" placeholder="Ingrese su edad" required>
+            </div>
+            <!--CLUBES-->
+            <div class="form-group">
+                <p>Hincha de:</p>
+                <select id="dropdown" name="club" class="form-control" required>
+                    <option disabled selected value>Clubes</option>
+                    <option value="Boca Juniors">Boca Juniors</option>
+                    <option value="River Plate">River Plate</option>
+                    <option value="San Lorenzo">San Lorenzo</option>
+                    <option value="Independiente">Independiente</option>
+                    <option value="Racing">Racing</option>
+                    <option value="Velez">Velez</option>
+                    <option value="Estudiantes">Estudiantes</option>
+                    <option value="Gimnasia LP">Gimnasia LP</option>
+                    <option value="Newells">Newells</option>
+                    <option value="Rosario Central">Rosario Central</option>
+                    <option value="Arsenal">Arsenal</option>
+                    <option value="Colon">Colón</option>
+                    <option value="Union">Unión</option>
+                    <option value="Defensa y Justicia">Defensa y Justicia</option>
+                    <option value="Central Cordoba">Central Córdoba</option>
+                    <option value="Talleres">Talleres</option>
+                    <option value="Argentinos Juniors">Argentinos Juniors</option>
+                    <option value="Lanus">Lanús</option>
+                    <option value="Banfield">Banfield</option>
+                    <option value="Huracan">Huracán</option>
+                    <option value="Atletico Tucuman">Atlético Tucumán</option>
+                    <option value="Patronato">Patronato</option>
+                    <option value="Godoy Cruz">Godoy Cruz</option>
+                    <option value="Aldosivi">Aldosivi</option>
+                </select>
+            </div>
+            <!--SOCIO-->
+            <div class="form-group">
+                <p>¿Sos socio?</p>
+                <label>
+                    <input type="radio" name="socio" value="Si">
+                Si</label>    
+                <label>
+                    <input type="radio" name="socio" value="No">
+                No</label>    
+            </div>
+            <!--PARTIDOS-->
+            <div class="form-group">
+                <p>¿Como ves los partidos?</p>
+                <label>
+                    <input type="checkbox" name="partidos" value="tv">
+                TV</label>    
+                <label>
+                    <input type="checkbox" name="partidos" value="cancha">
+                En la cancha</label>
+                <label>
+                    <input type="checkbox" name="partidos" value="radio">
+                Radio</label>
+                <label>
+                    <input type="checkbox" name="partidos" value="internet">
+                Internet</label>            
+            </div>
+            <!--COMENTARIOS-->
+            <div class="form-group">
+                <p>Comentarios adicionales</p>
+                <textarea name="comentarios" class="input-textarea" id="comentarios" placeholder="Deje su comentario aca"></textarea>
+            </div>
+            <!--BOTON-->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button"> Enviar </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
